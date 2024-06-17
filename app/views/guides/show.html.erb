@@ -1,0 +1,12 @@
+<h1>Guides#show</h1>
+<p>Find me in app/views/guides/show.html.erb</p>
+<h1><%= @guide.title %></h1>
+
+<p><%= @guide.description %></p>
+<p><%= @guide.location %></p>
+<p><%= @guide.language_spoken %></p>
+<p><%= image_tag @guide.profile_picture %></p>
+<p><%= @guide.bio %></p>
+
+<%= link_to 'Back', guides_path %>
+

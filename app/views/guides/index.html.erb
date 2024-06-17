@@ -1,0 +1,14 @@
+<h1>Guides#index</h1>
+<p>Find me in app/views/guides/index.html.erb</p>
+<h1>Guides</h1>
+
+<%= link_to 'New Guide Profile', new_guide_path if user_signed_in? && current_user.guide? %>
+
+<ul>
+  <% @guides.each do |guide| %>
+    <li>
+      <%= link_to guide.title, guide %>
+    </li>
+  <% end %>
+</ul>
+
