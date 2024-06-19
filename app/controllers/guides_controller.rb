@@ -2,9 +2,9 @@ class GuidesController < ApplicationController
   before_action :authenticate_user!
   # before_action :ensure_user_is_guide, only: [:new, :create]
 
-  def new
-    @guide = current_user
-  end
+  # def new
+  #   @guide = current_user
+  # end
 
   def create
     @guide = current_user
